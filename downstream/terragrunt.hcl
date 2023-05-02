@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source ="github.com/omerurhan/rke2-terraform.git//rke2-infra?ref=v0.0.5"
+  source ="github.com/omerurhan/rke2-terraform.git//rke2-infra?ref=v0.0.8"
 }
 inputs = {
 
@@ -20,4 +20,5 @@ inputs = {
   }
   cp_count=3
   worker_count=3
+  instance_role = "LokiStorage"
 }
